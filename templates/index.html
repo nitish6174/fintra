@@ -19,10 +19,10 @@
 		</div>
 	</nav>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<!-- Search Here -->
-			<div id="Searchform" class="col-md-10">
+			<div id="searchform" class="col-md-9">
 				<form class="form-inline">
 					<label for="query">Search For: </label>
 					<div class="form-group">
@@ -35,7 +35,7 @@
 						</select>
 					</div>
 					<div class="form-group">						
-						<button id="search" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button> 	        	
+						<button id="search" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
 					</div>
 				</form>
 				<hr>
@@ -44,8 +44,9 @@
 			</div>
 
 			<!--History Here-->
-			<div id="History" class="col-md-2">
-
+			<div id="history" class="col-md-3">
+				<h3 class="text-center">Recent searches</h3>
+				<div id="recent_list"></div>
 			</div>
 		</div>
 	</div>

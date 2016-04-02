@@ -1,7 +1,18 @@
 body {
-  padding-top: 75px;
+  padding-top: 50px;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+}
+
+#searchform {
+	padding-top: 20px;
+}
+#history {
+	min-height: 90vh;
+	margin-top: 10px;
+	border-left: 1px solid #ccc;
+	/* background-color: blue; */
 }

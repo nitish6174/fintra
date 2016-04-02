@@ -1,3 +1,5 @@
+$('#result').html('Results will be displayed here');
+
 $('#search').click( function() {
 	$.ajax({
 		url: '',
@@ -9,9 +11,16 @@ $('#search').click( function() {
 		success: function(data) {
 			var links = (JSON.parse(data))['links'];
 			$('#result').html('');
-			for(i=0;i<links.length;i++)
+			if(links.length>0)
 			{
-				$('#result').append('<div><a href="'+links[i]+'">'+links[i]+'</a></div>');
+				for(i=0;i<links.length;i++)
+				{
+					$('#result').append('<div><a href="'+links[i]+'">'+links[i]+'</a></div>');
+				}
+			}
+			else
+			{
+				$('#result').html('No results found for this query.');
 			}
 		}
 	});

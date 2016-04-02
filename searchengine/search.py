@@ -30,15 +30,7 @@ if(mode=='pages'):
 else:
 	ind_dir='pdf_index'
 
-print ind_dir
-print query
+result = search(ind_dir, query)
 
-# result = search(ind_dir, query)
-
-# ans = ""
-
-# for line in result:
-# 	# print line
-# 	ans = ans + line
-
-# print ans
+for line in result:
+	print line
